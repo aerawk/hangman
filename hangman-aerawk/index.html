@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Hangman</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Dokdo" rel="stylesheet">
+        <link href="/styles/styles.css" rel="stylesheet">
+        <link href="/images/favicon.png" rel="icon">
+    
+    </head>
+    
+    <body class="bg-info">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-10 mx-auto">
+                    <h1 class="display-2 text-center text-accent p-2">HANGMAN</h1>
+                    <h3 class="text-center font-italic text-dark p-2">Type a letter to make a guess!</h3>
+                    <div class="card bg-dark p-5">  
+                        
+                        <div id="puzzle" class="puzzle card-body mx-auto"></div>
+                        <input type="text" id="textInput" class="mx-auto" placeholder="Enter a guess!">
+                        <img id="smiley" src="/images/Hangman-smileys-01.png" class="img-fluid mx-auto" style="max-width: 150px;">
+                        <p id="guesses" class="text-center p-4"></p>
+                        <button id="reset" class="button">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="/scripts/requests.js"></script>
+    <script src="/scripts/hangman.js"></script>
+    <script src="/scripts/app.js"></script>
+</body>
+
+</html>

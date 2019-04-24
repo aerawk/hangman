@@ -1,0 +1,78 @@
+
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+
+ html {
+     font-size: 72.5%;
+}
+
+ body {
+     background: #2B292E;
+     color: #fafafa;
+     font-family: Helvetica, Arial, sans-serif;
+     font-size: 1.6rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     /* min-height: 100vh; */
+}
+
+ span {
+     border-bottom: 1px solid #534f59;
+     display: inline-block;
+     font-size: 2rem;
+     height: 2.4rem;
+     line-height: 2.4rem;
+     margin: 0 .1rem;
+     text-align: center;
+     text-transform: uppercase;
+     width: 2.4rem;
+}
+
+ p {
+     font-weight: 300;
+     font-family: 'Do Hyeon', sans-serif;
+     margin-bottom: .8rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+     /* font-family: 'Dokdo', cursive; */
+     font-family: 'Do Hyeon', sans-serif;
+     
+}
+
+.puzzle {
+     display: flex;
+     font-family: 'Do Hyeon', sans-serif;
+     /* font-family: 'Dokdo', cursive; */
+     margin-bottom: 4.8rem;
+}
+
+.button {
+     background: #7217b8;
+     border: none;
+     border-bottom: 2px solid #521085;
+     cursor: pointer;
+     color: white;
+     font-family: 'Do Hyeon', sans-serif;
+     font-size: 1.4rem;
+     font-weight: 300;
+     margin: 0 auto;
+     width: 50%;
+     padding: .8rem;
+     transition: background .3s ease, color .3s ease;
+}
+
+ .button:hover {
+     background: #521085;
+}
+
+#textInput {
+     font-family: 'Do Hyeon', sans-serif;
+     text-align: center;
+     color: #17a2b8;
+     padding: .8rem;
+}
