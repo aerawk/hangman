@@ -9,10 +9,15 @@ class Hangman {
     }
     get message() {
         if (this.status === 'playing') {
-            if(this.remainingGuesses <= 2) {
+            if(this.remainingGuesses === 2) {
                 document.querySelector('#guesses').style.color = 'orange'
                 return `${this.remainingGuesses} guesses remaining.`
             }
+            if(this.remainingGuesses === 1) {
+                document.querySelector('#guesses').style.color = 'orange'
+                return `${this.remainingGuesses} guess remaining.`
+            }
+
             document.querySelector('#guesses').style.color = 'white'
             if (this.remainingGuesses === 5) {
                 document.querySelector('#smiley').src = '/images/Hangman-smileys-01.png'

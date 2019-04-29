@@ -1,32 +1,76 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <title>Hangman</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Dokdo" rel="stylesheet">
-        <link href="/styles/styles.css" rel="stylesheet">
-        <link href="/images/favicon.png" rel="icon">
-    
-    </head>
-    
-    <body class="bg-info">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-lg-10 mx-auto">
-                    <h1 class="display-2 text-center text-accent p-2">HANGMAN</h1>
-                    <h3 class="text-center font-italic text-dark p-2">Type a letter to make a guess!</h3>
-                    <div class="card bg-dark p-5">  
-                        
-                        <div id="puzzle" class="puzzle card-body mx-auto"></div>
-                        <input type="text" id="textInput" class="mx-auto" placeholder="Enter a guess!">
-                        <img id="smiley" src="/images/Hangman-smileys-01.png" class="img-fluid mx-auto" style="max-width: 150px;">
-                        <p id="guesses" class="text-center p-4"></p>
-                        <button id="reset" class="button">Reset</button>
+<head>
+    <title>Hangman</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Dokdo" rel="stylesheet">
+    <link href="/styles/styles.css" rel="stylesheet">
+    <link href="/images/favicon.png" rel="icon">
+
+</head>
+
+<body class="bg-info">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-lg-10 mx-auto">
+                <h1 class="display-2 text-center text-accent p-2">HANGMAN</h1>
+                <!-- <h3 class="text-center font-italic text-dark p-2">Type a letter to make a guess!</h3> -->
+                <div class="card bg-dark p-3">
+
+                    <div id="puzzle" class="puzzle card-body mx-auto"></div>
+                    <img id="smiley" src="/images/Hangman-smileys-01.png" class="img-fluid mx-auto my-1"
+                    style="max-width: 150px;">
+                    <p id="guesses" class="text-center p-2"></p>
+                    <!-- <input type="text" id="textInput" class="mx-auto" placeholder="Enter a guess!" autocomplete="off"> -->
+                    <div class="container">
+                        <div class="row justify-content-center">
+
+                                <button id="a" class="letter-button">A</button>
+                                <button id="b" class="letter-button">B</button>
+                                
+                                <button id="c" class="letter-button">C</button>
+                                <button id="d" class="letter-button">D</button>
+                                <button id="e" class="letter-button">E</button>
+                                <button id="f" class="letter-button">F</button>
+                                <button id="g" class="letter-button">G</button>
+                                <button id="h" class="letter-button">H</button>
+                                <button id="i" class="letter-button">I</button>
+                        </div>
+                        <div class="row justify-content-center">
+
+                            <button id="j" class="letter-button">J</button>
+                            <button id="k" class="letter-button">K</button>
+                            <button id="l" class="letter-button">L</button>
+                            <button id="m" class="letter-button">M</button>
+                            <button id="n" class="letter-button">N</button>
+                            <button id="o" class="letter-button">O</button>
+                            <button id="p" class="letter-button">P</button>
+                            <button id="q" class="letter-button">Q</button>
+                            <button id="r" class="letter-button">R</button>
+                        </div>
+                        <div class="row justify-content-center">
+
+                            <button id="s" class="letter-button">S</button>
+                            <button id="t" class="letter-button">T</button>
+                            <button id="u" class="letter-button">U</button>
+                            <button id="v" class="letter-button">V</button>
+                            <button id="w" class="letter-button">W</button>
+                            <button id="x" class="letter-button">X</button>
+                            <button id="y" class="letter-button">Y</button>
+                            <button id="z" class="letter-button">Z</button>
+                        </div>
+                        <div class="row justify-content-center p-3">
+                            <button id="reset" class="button">New Game</button>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
+    </div>
+    </div>
     <script src="/scripts/requests.js"></script>
     <script src="/scripts/hangman.js"></script>
     <script src="/scripts/app.js"></script>
