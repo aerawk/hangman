@@ -9,21 +9,152 @@ const guessesElement = document.querySelector('#guesses')
 window.addEventListener('keypress', (e) => {
     const guess = String.fromCharCode(e.charCode)
     game1.makeGuess(guess)
+    console.log(guess)
+    console.log(typeof guess)
     render()
 })
 
-document.querySelector('#textInput').addEventListener('keyup', (e) => {
+document.querySelector('#textInput').addEventListener('input', (e) => {
     const textInput = document.querySelector('#textInput')
-    const clearInput = () => {
-        textInput.value = ''
-    }
-    const guess = e.key
+    const clearInput = () => { textInput.value = '' }
+    const guess = textInput.value
     console.log(guess)
     console.log(typeof guess)
     game1.makeGuess(guess)
     render()
     setTimeout(clearInput, 750)
 })
+
+document.querySelector('.letter-button').addEventListener('click', (e) => {
+    const guess = document.querySelector('.letter-button').innerHTML
+    game1.makeGuess(guess)
+    render()
+    console.log(guess)
+    console.log(typeof guess)
+})
+
+document.querySelector('#a').addEventListener('click', (e) => {
+    game1.makeGuess('a')
+    render()
+})
+document.querySelector('#b').addEventListener('click', (e) => {
+    game1.makeGuess('b')
+    render()
+})
+document.querySelector('#c').addEventListener('click', (e) => {
+    game1.makeGuess('c')
+    render()
+})
+document.querySelector('#d').addEventListener('click', (e) => {
+    game1.makeGuess('d')
+    render()
+})
+document.querySelector('#e').addEventListener('click', (e) => {
+    game1.makeGuess('e')
+    render()
+})
+document.querySelector('#f').addEventListener('click', (e) => {
+    game1.makeGuess('f')
+    render()
+})
+document.querySelector('#g').addEventListener('click', (e) => {
+    game1.makeGuess('g')
+    render()
+})
+document.querySelector('#h').addEventListener('click', (e) => {
+    game1.makeGuess('h')
+    render()
+})
+document.querySelector('#i').addEventListener('click', (e) => {
+    game1.makeGuess('i')
+    render()
+})
+document.querySelector('#j').addEventListener('click', (e) => {
+    game1.makeGuess('j')
+    render()
+})
+document.querySelector('#k').addEventListener('click', (e) => {
+    game1.makeGuess('k')
+    render()
+})
+document.querySelector('#l').addEventListener('click', (e) => {
+    game1.makeGuess('l')
+    render()
+})
+document.querySelector('#m').addEventListener('click', (e) => {
+    game1.makeGuess('m')
+    render()
+})
+document.querySelector('#n').addEventListener('click', (e) => {
+    game1.makeGuess('n')
+    render()
+})
+document.querySelector('#o').addEventListener('click', (e) => {
+    game1.makeGuess('o')
+    render()
+})
+document.querySelector('#p').addEventListener('click', (e) => {
+    game1.makeGuess('p')
+    render()
+})
+document.querySelector('#q').addEventListener('click', (e) => {
+    game1.makeGuess('q')
+    render()
+})
+document.querySelector('#r').addEventListener('click', (e) => {
+    game1.makeGuess('r')
+    render()
+})
+document.querySelector('#s').addEventListener('click', (e) => {
+    game1.makeGuess('s')
+    render()
+})
+document.querySelector('#t').addEventListener('click', (e) => {
+    game1.makeGuess('t')
+    render()
+})
+document.querySelector('#u').addEventListener('click', (e) => {
+    game1.makeGuess('u')
+    render()
+})
+document.querySelector('#v').addEventListener('click', (e) => {
+    game1.makeGuess('v')
+    render()
+})
+document.querySelector('#w').addEventListener('click', (e) => {
+    game1.makeGuess('w')
+    render()
+})
+document.querySelector('#x').addEventListener('click', (e) => {
+    game1.makeGuess('x')
+    render()
+})
+document.querySelector('#y').addEventListener('click', (e) => {
+    game1.makeGuess('y')
+    render()
+})
+document.querySelector('#z').addEventListener('click', (e) => {
+    game1.makeGuess('z')
+    render()
+})
+
+
+
+const letterButtons = Array.from(document.querySelectorAll('.letter-button'))
+console.log(letterButtons)
+
+// letterButtons.addEventListener('click', (e) => {
+//     console.log
+// })
+// document.querySelector('#submit').addEventListener('click', (e) => {
+//     const guess = document.querySelector('#textInput').value
+//     const clearInput = () => { textInput.value = '' }
+//     console.log(guess)
+//     console.log(typeof guess)
+//     game1.makeGuess(guess)
+//     render()
+//     clearInput()
+// })
 
 // .split('') is dividing the puzzle string into an array of individual letters
 // for each of those individual letters, we set the letter in a span element, 
